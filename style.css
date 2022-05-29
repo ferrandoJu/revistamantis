@@ -1,0 +1,100 @@
+body {
+    display: grid;
+    font-family: Arial, sans-serif;
+    grid-gap: 1rem;
+    grid-template-areas:
+      "header header header"
+      "aside main main"
+      "footer footer footer";
+    grid-template-columns: 30% 60% auto;
+    grid-template-rows: 15% 100vh 10%;
+    background-color: rgb(195, 241, 147);
+  }
+
+  .o-header {
+    grid-area: header;
+    padding: 1.5rem;
+}
+
+  .o-aside {
+    grid-area: aside;
+  }
+
+  .o-main {
+    grid-area: main;
+  }
+
+  .o-footer {
+    grid-area: footer;
+    padding: 1rem;
+  }
+  .o-header, .o-aside, .o-main, .o-footer {
+    background: #e22054;
+    color: #e5f382;
+  }
+ .navPrincipal{
+    display: flex;
+    justify-content: flex-start;
+  }
+  .back{
+    display: flex;
+    justify-items: flex-end;
+  }
+  .footerPrincipal{
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+      flex-flow: row wrap;
+      padding-bottom: 50%;
+      font-family: 'Sacramento';
+      font-size: 150%;
+  }
+  .menuNotas{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    margin-right: 15%;
+   }
+  h1{
+    font-family: 'Permanent Marker';
+    font-size: 360%;
+    display: flex;
+    justify-content: center;
+    margin-right: 5%;
+    color: #e5f382;
+  }
+ .imagenes {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-flow: column wrap;
+   padding: 8%;
+ }
+ header {
+   display: flex;
+   justify-items: center;
+   align-items: center;
+   justify-content: space-between
+ }
+
+main {
+  display: flex;
+  overflow-x: scroll;
+  justify-content: center;
+  padding: 8%; 
+  font-family: 'Didact Gothic', sans-serif;
+}
+ul li {
+  list-style: none;
+  margin: 0;
+}
+.sideBarNotas {
+  display: flex;
+  overflow-y: auto;
+  overflow-x: scroll;
+  font-family: 'Didact Gothic', sans-serif;  
+}
