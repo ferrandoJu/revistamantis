@@ -36,6 +36,14 @@ body {
  .navPrincipal{
     display: flex;
     justify-content: flex-start;
+    margin-left: 6%;
+  }
+.box {
+  transition: all 3s;
+}
+  .principal:hover{
+    transform:translateX(150px);
+    
   }
   .back{
     display: flex;
@@ -62,10 +70,10 @@ body {
    }
   h1{
     font-family: 'Permanent Marker';
-    font-size: 360%;
+    font-size: 300%;
     display: flex;
     justify-content: center;
-    margin-right: 5%;
+    margin-right: 30%;
     color: #0d0d0b;
   }
  .imagenes {
